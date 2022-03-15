@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>INICIO</title>
+  </head>
+
+  <body>
+    <header id="menu">
+      <nav >
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="ArtWeb" />
+        </a>
+
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="#">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presentacion">
+      <article class="flex-item1">
+        <h1>Diseñamos Interfaces Minimalistas Que Impactan y Cautivan</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          dicta exercitationem consectetur earum suscipit. Quo tenetur
+          consequuntur quasi quisquam iste consectetur quidem expedita eius
+          quis! Eligendi ex eius eos et.
+        </p>
+        <div>
+          <button class="btn-principal" type="submit">CONTACTAME</button>
+          <button class="btn-secundario" type="submit">PORTAFOLIO</button>
+        </div>
+      </article>
+
+      <div class="flex-item2">
+        <img
+          src="img/caratula2.png"
+          alt="portafolio web"
+          width="500"
+          height="400"
+        />
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <section class="servicios">
+        <div class="titulo-serivicios">
+          <h2>Creamos Experiencias Maravillosas Para Los Usuarios</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
+            iure molestias cupiditate minus tenetur, adipisci eaque assumenda
+            voluptatum cumque esse, et atque a sequi sint. Totam temporibus
+            voluptas molestias asperiores!
+          </p>
+        </div>
+
+        <div class="tipo-servicios">
+          <div>
+            <span class="material-icons-outlined"> design_services </span>
+            <h3>DISEÑO UX/UI</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+            <span class="material-icons-outlined"> code </span>
+            <h3>DESARROLLO WEB</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+            <span class="material-icons-outlined"> local_grocery_store </span>
+            <h3>COMERCIO DIGITAL</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p class="content-footer">DiegoSarabia.com &copy;Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+      const menu = document.getElementById('menu');
+      window.onscroll = function(){
+        if(window.pageYOffset>10){
+          menu.style.backgroundColor = '#fff';
+          menu.style.boxShadow = "0px 1px 5px #ccc, 0px 1px 2px #aaa";
+        }else{
+          menu.style.backgroundColor='initial';
+          menu.style.boxShadow='initial'
+        }
+      }
+    </script>
+
+
+  </body>
+</html>
